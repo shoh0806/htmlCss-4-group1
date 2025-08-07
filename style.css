@@ -1,0 +1,204 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+.nav-oh {
+  margin: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.title-oh a {
+  text-decoration: none;
+  color: rgb(17, 108, 244);
+}
+
+.plane-icon-oh {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: nowrap;
+}
+
+.Trevia {
+  font-family: Impact, "Arial Narrow Bold", sans-serif;
+  font-size: 50px;
+}
+.search-oh {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hot-button-oh {
+  position: relative;
+  top: 1rem;
+}
+.Hot-oh {
+  border: 2px solid rgb(168, 6, 168);
+  color: rgb(168, 6, 168);
+  padding: 0 0.7rem;
+  margin: 0 0.5rem;
+}
+
+.input-wrapper {
+  position: relative;
+  max-width: 400px;
+  top: 1rem;
+  max-height: 50px;
+}
+
+.search-input-oh {
+  border-radius: 30px;
+  width: 100%;
+  min-width: 300px;
+  max-width: 100%;
+  height: 40px;
+  padding: 0 2rem;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  outline: none;
+}
+
+.search-icon-oh {
+  position: absolute;
+  top: 30%;
+  right: 1rem;
+}
+.card-event-oh {
+  display: flex;
+  position: relative;
+  bottom: 1rem;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-img-oh {
+  width: 40px;
+  height: auto;
+  transform: rotate(25deg);
+}
+
+/* @media (max-width: 600px) */
+/* 네비게이션 두번째줄 */
+
+.nav-second-line-oh {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-second-line-first-oh {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.dropdown-oh {
+  position: relative;
+}
+
+.dropdown-oh a {
+  position: relative;
+  color: black;
+  text-decoration: none;
+  padding-bottom: 4px;
+}
+
+.dropdown-oh a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0; /* padding-bottom과 연동됨 */
+  width: 100%;
+  height: 3px;
+  background-color: rgb(17, 108, 244);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-oh a:hover {
+  color: rgb(17, 108, 244);
+}
+
+.dropdown-oh a:hover::after {
+  transform: scaleX(1);
+}
+
+.dropdown-content-oh {
+  display: none;
+  position: absolute;
+  background-color: gray;
+  width: 40vw;
+  height: 40vh;
+  top: 100%;
+  left: 0;
+  z-index: 999;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-oh:hover .dropdown-content {
+  display: block;
+}
+
+.menu-all-oh {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  
+}
+
+.menu-all-section-oh {
+  border-bottom: 2px solid black;
+  margin-bottom: 1rem;
+}
+
+.menu-anchor a{
+  display: block;
+}
