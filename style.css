@@ -1,0 +1,45 @@
+.footer-nav-font-kang{
+    font-size: 13px;
+}
+
+.footer-menu-privacy-policy-kang{
+    font-weight: 700;
+}
+
+.footer-border-kang{
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.footer-font-kang{
+    font-size: 12px;
+}
+
+.footer-atag-style-kang{
+    font-size: 13px;
+    text-decoration: none;
+    color: var(--color-neutral-b-80, rgba(41, 41, 45, .8));
+    font-size: 12px;
+}
+
+.footer-license-kang{
+    font-size:14px;
+    font-weight: 700;
+}
+
+.footer-mb-4-kang{
+    margin-bottom: 6px;
+}
+
+.footer-mt-4-kang{
+    margin-top: 6px;
+}
+
+.footer-navbar-kang{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}
