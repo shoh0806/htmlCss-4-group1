@@ -1,0 +1,121 @@
+/* 메인 공통레이아웃*/
+.main-container.son {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* 메인 캐러셀 */
+.carousel.son {
+    border-radius: 2rem;
+}
+
+.carousel-item.son img {
+    border-radius: 2rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 2rem;
+  height: 2rem;
+  background-size: 100% 100%;
+}
+
+.carousel-control-prev.son {
+  left: -5% ;
+}
+
+.carousel-control-next.son {
+  right: -5%;
+}
+
+.carousel-caption {
+    bottom: 3.25rem;
+    text-align: left;
+}
+
+.carousel.son h5 {
+    font-weight: bold;
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 3px 7px rgb(0, 0, 0, 0.4);
+}
+
+.carousel.son p {
+    font-size: 1.3rem;
+    text-shadow: 2px 3px 7px rgb(0, 0, 0, 0.4);
+}
+
+/*메인 예약 메뉴바*/
+.booking.son {
+    background: white;
+    border-radius: 2rem;
+    color: black;
+    border: 1px solid rgb(227, 227, 227);
+    box-shadow: 0px 0px 30px 1px #eeeeee;
+}
+
+.booking-nav-tab.son {
+    display: flex;
+    padding: 0;
+    
+}
+
+.booking-nav-item.son {
+    list-style-type: none;
+    font-weight: bold;
+}
+
+.booking-nav-link.son {
+    color: rgb(186, 186, 186);
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 15px;
+}
+
+.booking-nav-link.son.active {
+    padding: 10px 15px;
+    border-radius: 50px;
+    background-color: rgb(240, 244, 255);
+    color: #0d6efd;;
+}
+
+.booking-label.son {
+    border: none;
+}
+
+.booking .row.son {
+    padding: 0 12px;
+}
+
+.booking .col-md.son {
+    padding: 12px 20px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 12px;
+} 
+
+.booking .col-md.son span {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: rgb(161, 161, 161);
+}
+
+.booking .col-md.son p {
+    margin: 0;
+    margin-top: 3px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.booking .col-md.son .text {
+    color: rgb(204, 204, 204);
+}
+
+.booking .col-md-auto.son button{
+    height: 77px;
+    font-weight: bold;
+    border-radius: 12px;
+}
+
+.booking .col-md-auto.son button i {
+    margin-right: 5px;
+}
