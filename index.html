@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link
+   <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
@@ -219,11 +219,160 @@
         </div>
       </nav>
     </div>
+     <main class="main-container son">
+        <!-- 메인 캐러셀 -->
+        <div id="carouselExampleCaptions" class="carousel slide son">
+            <div class="carousel-indicators son">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active son" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner son">
+            <div class="carousel-item active son">
+                <img src="./img/main-carousel01.png" class="d-block w-100 son" alt="...">
+                <div class="carousel-caption d-none d-md-block son">
+                <h5>지금 바로 예약 <br>
+                    가자, 이번엔 제대로 된 여름휴가!</h5>
+                <p>8월 한정! 인기 해외 여행지 최대 50% 할인 — 늦기 전에 예약하세요!</p>
+                </div>
+            </div>
+            <div class="carousel-item son">
+                <img src="./img/main-carousel02.png" class="d-block w-100 son" alt="...">
+                <div class="carousel-caption d-none d-md-block son">
+                <h5>어디든 떠나고 싶은 당신에게 <br>
+                    지금은 반값의 기회!</h5>
+                <p>항공 + 호텔 패키지로 최대 30만원 혜택!
+                    놓치면 후회할 한정 프로모션</p>
+                </div>
+            </div>
+            <div class="carousel-item son">
+                <img src="./img/main-carousel03.png" class="d-block w-100 son" alt="...">
+                <div class="carousel-caption d-none d-md-block son">
+                <h5>혼자 떠나기 좋은 <br>
+                    해외 여행지 TOP 5</h5>
+                <p>혼행족을 위한 맞춤 플랜!
+                    싱글룸 특가 & 자유 일정 패키지 출시</p>
+                </div>
+            </div>
+            </div>
+            <button class="carousel-control-prev son" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon son" aria-hidden="true"></span>
+            <span class="visually-hidden son">Previous</span>
+            </button>
+            <button class="carousel-control-next son" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon son" aria-hidden="true"></span>
+            <span class="visually-hidden son">Next</span>
+            </button>
+        </div>
+        <!--메인 예약 메뉴바 -->
+        <div class="booking container mt-4 p-4 son">
+            <ul class="booking-nav-tab mb-3 son">
+                <li class="booking-nav-item son">
+                    <a href="#" class="booking-nav-link son">항공</a>
+                </li>
+                <li class="booking-nav-item son">
+                    <a href="#" class="booking-nav-link son">호텔</a>
+                </li>
+                 <li class="booking-nav-item son">
+                    <a href="#" class="booking-nav-link son">해외패키지</a>
+                </li>
+            </ul>
+            <div class="booking-tab-content">
+                <!-- 항공 -->
+                <div class="row g-2 align-items-center son" data-tab="항공">
+                    <div class="col-md me-1 son">
+                        <span>출발지</span>
+                        <p>서울</p>
+                    </div>
+                    <div class="col-md me-1 son">
+                        <span>도착지</span>
+                        <p class="text">도착</p>
+                    </div>
+                    <div class="col-md me-1 son">
+                        <span>출발일/기간</span>
+                        <p>10.6(월) ~ 10.10(금)</p>
+                    </div>
+                    <div class="col-md me-1 son">
+                        <span>인원 및 좌석</span>
+                        <p>성인 1﹒일반석</p>
+                    </div>
+                    <div class="col-md-auto son">
+                        <button class="btn btn-primary px-4 son">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        최저가 검색
+                        </button>
+                    </div>
+                </div>
+                <!-- 호텔 -->
+                  <div class="row g-2 align-items-center son" data-tab="호텔">
+                    <div class="col-md me-1 son">
+                        <span>도시 및 숙소</span>
+                        <p class="text">도시 및 숙소를 입력해주세요.</p>
+                    </div>
+                    <div class="col-md me-1 son">
+                        <span>출발일/기간</span>
+                        <p>10.6(월) ~ 10.10(금)</p>
+                    </div>
+                    <div class="col-md-auto son">
+                        <button class="btn btn-primary px-4 son">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        최저가 검색
+                        </button>
+                    </div>
+                </div>
+                <!-- 해외패키지 -->
+                  <div class="row g-2 align-items-center son" data-tab="해외패키지">
+                    <div class="col-md me-1 son">
+                        <span>도시 및 상품</span>
+                        <p class="text">도시 및 상품명을 입력해주세요.</p>
+                    </div>
+                    <div class="col-md me-1 son">
+                        <span>출발일/기간</span>
+                        <p>모든 날짜로 검색</p>
+                    </div>
+                    <div class="col-md-auto son">
+                        <button class="btn btn-primary px-4 son">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        최저가 검색
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
+    <script>
+    // 메인 예약 메뉴바 
+    document.querySelectorAll('.booking-nav-item').forEach(tab => {
+    tab.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const selected = this.textContent.trim();
+
+        document.querySelectorAll('.booking-tab-content .row').forEach(row => {
+        row.classList.add('d-none');
+        });
+
+        const target = document.querySelector(`.booking-tab-content .row[data-tab="${selected}"]`);
+        if (target) target.classList.remove('d-none');
+
+        document.querySelectorAll('.booking-nav-link').forEach(link => link.classList.remove('active'));
+        this.querySelector('.booking-nav-link').classList.add('active');
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const allRows = document.querySelectorAll('.booking-tab-content .row');
+        allRows.forEach((row, i) => {
+         row.classList.toggle('d-none', i !== 0); // 첫 번째만 표시
+        });
+    });
+    </script>
   </body>
 </html>
+ 
