@@ -497,13 +497,13 @@ table {
   background-color: #f7f7f8 !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .footer-display-none-kang {
         display: none;
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
     .footer-mobile-display-kang {
         display: none;
     }
