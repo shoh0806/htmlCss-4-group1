@@ -3,51 +3,226 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
+@media (max-width: 600px) {
+  /* 모바일 전용 스타일 */
+  .nav-oh {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .search-oh {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    position: relative;
+    left: 20%;
+  }
+
+  .input-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    top: 1rem;
+    max-height: 50px;
+    right: 20%;
+  }
+
+  .card-event-oh {
+    display: flex;
+    position: relative;
+    top: 1rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .nav-second-line-oh {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1.5rem;
+  }
+
+  .dropdown-content-oh {
+    display: none;
+    position: absolute;
+    background-color: rgb(209, 247, 244);
+    width: max-content !important;
+    height: fit-content !important;
+    top: 1rem;
+    left: 0;
+    z-index: 99;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    opacity: 0.8;
+  }
+  .menu-else-oh {
+    max-width: 100%;
+    display: flex;
+    gap: 0.5rem !important;
+  }
+  .dropdown-oh a {
+    display: flex;
+    width: auto;
+    white-space: nowrap;
+  }
+  .menu-all-oh {
+    display: flex;
+    max-width: 300px;
+  }
+
+  .menu-else-oh .dropdown-oh .dropdown-content-oh {
+    position: absolute;
+    left: 0;
+    top: 2.5rem;
+    max-height: 70vh;
+    overflow: auto;
+  }
+  .menu-else-oh .dropdown-oh .dropdown-content-oh.fixed-on-mobile {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-70%);
+    z-index: 1000;
+  }
+
+  .dropdown-oh a::after {
+    content: " /";
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 601px) {
+  /* 태블릿 전용 스타일 */
+  .dropdown-oh:hover .dropdown-content-oh {
+    display: block;
+  }
+}
 
 .nav-oh {
   margin: 2rem;
@@ -104,12 +279,11 @@ table {
   border: 1px solid #ccc;
   border-radius: 30px;
   outline: none;
-  
 }
 
 .search-icon-oh {
   position: absolute;
-  top: 30%;
+  top: 25%;
   right: 1rem;
 }
 .card-event-oh {
@@ -126,10 +300,8 @@ table {
   transform: rotate(25deg);
 }
 
-/* @media (max-width: 600px) */
-/* 네비게이션 두번째줄 */
-
 .nav-second-line-oh {
+  margin: 2rem;
   display: flex;
   justify-content: space-between;
 }
@@ -140,6 +312,50 @@ table {
   gap: 2rem;
 }
 
+.menu-else-oh {
+  display: flex;
+  gap: 2rem;
+}
+
+.menu-icon-oh {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.nav-second-line-second-oh {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.nav-second-line-second-oh a {
+  text-decoration: none;
+  color: black;
+  position: relative; /* ::after의 기준 */
+  display: inline-block; /* 높이/line-box 안정화 */
+  padding-bottom: 4px;
+}
+
+.nav-second-line-second-oh a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0; /* padding-bottom과 연동됨 */
+  width: 100%;
+  height: 3px;
+  background-color: rgb(17, 108, 244);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+.nav-second-line-second-oh a:hover {
+  color: rgb(17, 108, 244);
+}
+
+.nav-second-line-second-oh a:hover::after {
+  transform: scaleX(1);
+}
+
 .dropdown-oh {
   position: relative;
 }
@@ -147,6 +363,7 @@ table {
 .dropdown-oh a {
   position: relative;
   color: black;
+  display: block;
   text-decoration: none;
   padding-bottom: 4px;
 }
@@ -162,6 +379,28 @@ table {
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease;
+  z-index: 999;
+}
+
+.dropdown-oh a .link-text::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%; /* 글씨 길이만큼 */
+  height: 3px;
+  background-color: rgb(17, 108, 244);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-oh a:hover .link-text {
+  color: rgb(17, 108, 244);
+}
+
+.dropdown-oh a:hover .link-text::after {
+  transform: scaleX(1); /* 글씨 길이만큼만 밑줄 확장 */
 }
 
 .dropdown-oh a:hover {
@@ -175,16 +414,24 @@ table {
 .dropdown-content-oh {
   display: none;
   position: absolute;
-  background-color: gray;
-  width: 40vw;
-  height: 40vh;
-  top: 100%;
+  background-color: rgb(209, 247, 244);
+  width: 10vw;
+  height: 30vh;
+  top: 1rem;
   left: 0;
-  z-index: 999;
+  z-index: 99;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+.dropdown-content-oh a {
+  display: inline-block; /* block → inline-block */
+}
 
-.dropdown-oh:hover .dropdown-content {
+.dropdown-mega-oh {
+  width: 40vw;
+  height: 40vh;
+}
+
+.dropdown-oh:hover .dropdown-content-oh {
   display: block;
 }
 
@@ -192,7 +439,7 @@ table {
   display: flex;
   gap: 3rem;
   flex-wrap: wrap;
-  
+  margin: 1rem;
 }
 
 .menu-all-section-oh {
@@ -200,6 +447,181 @@ table {
   margin-bottom: 1rem;
 }
 
-.menu-anchor a{
+.menu-anchor-all-oh a {
   display: block;
+  margin-top: 1rem;
 }
+
+.menu-anchor-oversea-oh a {
+  margin: 1rem;
+  display: flex;
+}
+
+/* 메인 공통레이아웃*/
+/* .main-container.son {
+    max-width: 1280px;
+    margin: 0 auto;
+} */
+
+/* 메인 캐러셀 */
+/* .carousel.son {
+    border-radius: 2rem;
+} */
+/* 
+.carousel-item.son img {
+    border-radius: 2rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 2rem;
+  height: 2rem;
+  background-size: 100% 100%;
+}
+
+.carousel-control-prev.son {
+  left: -5% ;
+}
+
+.carousel-control-next.son {
+  right: -5%;
+}
+
+.carousel-caption {
+    bottom: 3.25rem;
+    text-align: left;
+}
+
+.carousel.son h5 {
+    font-weight: bold;
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 3px 7px rgb(0, 0, 0, 0.4);
+}
+
+.carousel.son p {
+    font-size: 1.3rem;
+    text-shadow: 2px 3px 7px rgb(0, 0, 0, 0.4);
+} */
+
+/*메인 예약 메뉴바*/
+/* .booking.son {
+    background: white;
+    border-radius: 2rem;
+    color: black;
+    border: 1px solid rgb(227, 227, 227);
+    box-shadow: 0px 0px 30px 1px #eeeeee;
+}
+
+.booking-nav-tab.son {
+    display: flex;
+    padding: 0;
+    
+}
+
+.booking-nav-item.son {
+    list-style-type: none;
+    font-weight: bold;
+}
+
+.booking-nav-link.son {
+    color: rgb(186, 186, 186);
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 15px;
+}
+
+.booking-nav-link.son.active {
+    padding: 10px 15px;
+    border-radius: 50px;
+    background-color: rgb(240, 244, 255);
+    color: #0d6efd;;
+}
+
+.booking-label.son {
+    border: none;
+}
+
+.booking .row.son {
+    padding: 0 12px;
+}
+
+.booking .col-md.son {
+    padding: 12px 20px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 12px;
+} 
+
+.booking .col-md.son span {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: rgb(161, 161, 161);
+}
+
+.booking .col-md.son p {
+    margin: 0;
+    margin-top: 3px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.booking .col-md.son .text {
+    color: rgb(204, 204, 204);
+}
+
+.booking .col-md-auto.son button{
+    height: 77px;
+    font-weight: bold;
+    border-radius: 12px;
+}
+
+.booking .col-md-auto.son button i {
+    margin-right: 5px;
+}
+
+
+.footer-nav-font-kang{
+    font-size: 13px;
+}
+
+.footer-menu-privacy-policy-kang{
+    font-weight: 700;
+}
+
+.footer-border-kang{
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.footer-font-kang{
+    font-size: 12px;
+}
+
+.footer-atag-style-kang{
+    font-size: 13px;
+    text-decoration: none;
+    color: var(--color-neutral-b-80, rgba(41, 41, 45, .8));
+    font-size: 12px;
+}
+
+.footer-license-kang{
+    font-size:14px;
+    font-weight: 700;
+}
+
+.footer-mb-4-kang{
+    margin-bottom: 6px;
+}
+
+.footer-mt-4-kang{
+    margin-top: 6px;
+}
+
+.footer-navbar-kang{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+} */
