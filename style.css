@@ -352,6 +352,14 @@ table {
     font-size: 12px;
 }
 
+.footer-h2-margin-kang{
+  margin-bottom: 10px;
+}
+
+.footer-atag-margin-kang{
+  margin-bottom: 4px;
+}
+
 .footer-atag-style-kang{
     text-decoration: none;
     color: var(--color-neutral-b-80, rgba(41, 41, 45, .8));
@@ -364,7 +372,7 @@ table {
 }
 
 .footer-mb-4-kang{
-    margin-bottom: 6px;
+    margin-bottom: 8px;
 }
 
 .footer-mt-4-kang{
